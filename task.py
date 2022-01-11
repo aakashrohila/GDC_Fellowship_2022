@@ -6,7 +6,7 @@ text_file = open("task.txt", "a")
 
 
 def sorter(file_name):
-    file_contents = [line.rstrip('\n') for line in file_name.readlines()] # Text should not get sys.stdout.buffer.writeed with an extra space
+    file_contents = [line.rstrip('\n') for line in file_name.readlines()] # Text should not get printed with an extra space
     file_name.close()
     big_ls = []
     for i in range(len(file_contents)):
